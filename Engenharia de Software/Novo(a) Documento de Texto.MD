@@ -19,7 +19,17 @@ Em um projeto de software, o produto precisa ser entregue no tempo estipulado e 
 o planejamento de um produto de software de alta complexidade. Não tem como planejar a criação de uma solução de software sem levar em conta todos os aspectos também da programação, visto que engenharia de software
 é programação envolvendo tempo, escala e trade-offs.
 
-1° Um software ser extremamente simples de se utilizar e rápido, porém complexo de se programar.
-2° Um sistema multi-plataforma e com alto nivel de integração, porém é pesado.
-3° Um programa super chato de se utilizar, cheio de etapas de login, cheio de configurações adicionais, porém extremamente seguro e simples de se realizar manutenção.
+2-bla bla bla
 
+                1° Um software ser extremamente simples de se utilizar e rápido, porém complexo de se programar.
+                2° Um sistema multi-plataforma e com alto nivel de integração, porém é pesado.
+                3° Um programa super chato de se utilizar, cheio de etapas de login, cheio de configurações adicionais, porém extremamente seguro e simples de se realizar manutenção.
+
+3- Escolha outro exemplo e faça essa mesma atividade.
+    MIUI x Android Stock
+    A MIUI é a modificação do Android feita pela Xiaomi para ser utilizada em seus Smartphones. Já o android "Stock" é o Android base.
+    Na comunidade Android, o Android base é considerado sempre a referência utilizada pela Google em sua linha de smartphones Pixel.
+    A versão modificada pela Xiaomi (MUIU) é cheia de ótimas adições em termo de funcionalidade e em termos de sistemas internos. Apesar de ser considerada uma ROM (nome popular para versões do Android)
+muito pesada, ela compensa isso relizando uma otimização basicamente mágica na hora de instalação do sistema (primeiro boot após a compra).
+    Em termos de uso, a interface referência da Google é superior em quase todos os aspectos, é muito mais leve e fácil de se usar. 
+    Já a MIUI da Xiaomi é lotada de novos recursos super úteis, como Dual-Apps, extensão de RAM via armazenamento ulta rápido do dispositivo (SWAP glorificado) e uma super ampla capacidade de personalização.
