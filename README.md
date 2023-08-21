@@ -34,4 +34,5 @@ muito pesada, ela compensa isso relizando uma otimização basicamente mágica n
     Em termos de uso, a interface referência da Google é superior em quase todos os aspectos, é muito mais leve e fácil de se usar. 
     Já a MIUI da Xiaomi é lotada de novos recursos super úteis, como Dual-Apps, extensão de RAM via armazenamento ulta rápido do dispositivo (SWAP glorificado) e uma super ampla capacidade de personalização.
 
-![DIAGRAMA BANCO](https://github.com/CauevSilv/bertoti/assets/127447047/292f6638-8c18-4793-8893-4dd52012d006)
+![Uploading DIAGRAMA BANCO.png…]()
+
