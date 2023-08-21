@@ -19,7 +19,7 @@ Em um projeto de software, o produto precisa ser entregue no tempo estipulado e 
 o planejamento de um produto de software de alta complexidade. Não tem como planejar a criação de uma solução de software sem levar em conta todos os aspectos também da programação, visto que engenharia de software
 é programação envolvendo tempo, escala e trade-offs.
 
-2-bla bla bla
+2-Trade-offs
 
                 1° Um software ser extremamente simples de se utilizar e rápido, porém complexo de se programar.
                 2° Um sistema multi-plataforma e com alto nivel de integração, porém é pesado.
@@ -33,3 +33,4 @@ o planejamento de um produto de software de alta complexidade. Não tem como pla
 muito pesada, ela compensa isso relizando uma otimização basicamente mágica na hora de instalação do sistema (primeiro boot após a compra).
     Em termos de uso, a interface referência da Google é superior em quase todos os aspectos, é muito mais leve e fácil de se usar. 
     Já a MIUI da Xiaomi é lotada de novos recursos super úteis, como Dual-Apps, extensão de RAM via armazenamento ulta rápido do dispositivo (SWAP glorificado) e uma super ampla capacidade de personalização.
+
