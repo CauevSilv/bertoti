@@ -2,26 +2,26 @@ package Contas;
 
 public class Operacao{
     private String nome;
-    Saldo saldo = new Saldo();
+    Saldo saldo = new Saldo(0);
     public Operacao(String nome,double valor){
         this.nome = nome;
-        saldo.setSaldo(valor);
+        saldo.addSaldo(valor);
     }
     public void sacar(double valor) {
-        saldo.setSaldo(saldo.getSaldo() - valor);
+        saldo.retirarSaldo(valor);
         System.out.println("O novo saldo é " + saldo.getSaldo());
         }
     public void depositar(double valor){
-        saldo.setSaldo(saldo.getSaldo() + valor);
+        saldo.addSaldo(valor);
         System.out.println("O novo saldo é " + saldo.getSaldo());
     }
     public void pagar(double valor){
-        saldo.setSaldo(saldo.getSaldo() - valor);
+        saldo.retirarSaldo(valor);
         System.out.println("Conta paga!!! Segue seu novo saldo: " + saldo.getSaldo());
 
     }
     public void transferir(double valor,String nome1){
-        saldo.setSaldo(saldo.getSaldo() - valor);
+        saldo.retirarSaldo(valor);
         System.out.println(valor + " foi transferido para " + nome1);
     }
     public void verSaldo(){
