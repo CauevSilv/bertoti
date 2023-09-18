@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Bem vindo(a) " + nome + "!\nEscreva o valor disponível na sua conta.");
             double qtdMon = scanner.nextDouble();
 
-            Operacao op = new Operacao(nome, qtdMon);
+            Operacao op = new Operacao();
             int opcao = 90;
             while (opcao != 0) {
                 System.out.println("\nO que deseja fazer," + nome +
@@ -28,6 +28,7 @@ public class Main {
                 switch (opCase) {
                     case 1 -> {
                         System.out.println("Quantos reais você deseja sacar?");
+                        scanner.nextDouble();
                         op.sacar(scanner.nextDouble());
                     }
                     case 2 -> {
