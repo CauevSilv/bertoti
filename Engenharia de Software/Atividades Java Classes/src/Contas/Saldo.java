@@ -1,7 +1,7 @@
 package Contas;
 
 public class Saldo{
-    private double saldo;
+    double saldo;
 
     public Saldo(double valor){
         this.saldo = valor;

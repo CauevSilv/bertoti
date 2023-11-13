@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Bem vindo(a) " + nome + "!\nEscreva o valor disponível na sua conta.");
             double qtdMon = scanner.nextDouble();
 
-            Operacao op = new Operacao();
+            Operacao op = new Operacao(qtdMon);
             int opcao = 90;
             while (opcao != 0) {
                 System.out.println("\nO que deseja fazer," + nome +
