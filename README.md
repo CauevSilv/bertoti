@@ -21,9 +21,16 @@ o planejamento de um produto de software de alta complexidade. Não tem como pla
 
 2-Trade-offs
 
-                1° Um software ser extremamente simples de se utilizar e rápido, porém complexo de se programar.
-                2° Um sistema multi-plataforma e com alto nivel de integração, porém é pesado.
-                3° Um programa super chato de se utilizar, cheio de etapas de login, cheio de configurações adicionais, porém extremamente seguro e simples de se realizar manutenção.
+                1° Um sistema com integração com o seu ecossistema em um nível muito alto, porém com baixíssima capacidade de personalização e com o código extremamente fechado.
+                O MAC OS da Apple é o SO utilizado nos dispositivos Apple desktop e notebooks. Apesar de ter uma integração com o ecossistema Apple extremamente maduro, ele peca na capacidade de costumização e dificulta o usuário a acessar os ajustes mais finos e delicados do sistema
+                
+                2° Um sistema multi-plataforma e com alto nivel de integração, porém peca na otimização específica.
+                Android- A gama de dispositivos que usam android é inacreditavelmente grande, com a alta costumização que o sistema modifica, ele está presente nos celulares, em televisores e até em carros.
+                Com a alta capacidade de costumização, o android constantemente é criticado por sua instabilidade e requisitos de hardware quando comparado com seu principal concorrente, o IOS, da Apple.
+                
+                3° Um programa super chato de se utilizar, cheio de etapas de login, cheio de configurações adicionais, porém extremamente seguro.
+                Aplicativos de banco para celular são automaticamente ligados a burocracia até na tela de login, onde deve-se informar a senha do App, a senha do cartão e até mesmo uma chave única utilizada pelo app para aquela sessão.
+                Existem maneiras de passar essas etapas configurando a biometria pelo aparelho, contudo os aplicativos no geral continuam muito seguros.
 
 3- Escolha outro exemplo e faça essa mesma atividade.
     MIUI x Android Stock
