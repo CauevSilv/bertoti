@@ -1,3 +1,4 @@
+import Contas.Cliente;
 import Contas.Operacao;
 
 
@@ -11,13 +12,16 @@ public class Main {
                     "\nFaça seu login!");
             System.out.println("Informe seu CPF/CNPJ.");
             Scanner scanner = new Scanner(System.in);
+            System.out.println("Informe o nome do seu banco");
+            String banco = scanner.next();
             String cpfcnpj = scanner.next();
             System.out.println("Informe seu nome.");
             String nome = scanner.next();
             System.out.println("Bem vindo(a) " + nome + "!\nEscreva o valor disponível na sua conta.");
             double qtdMon = scanner.nextDouble();
 
-            Operacao op = new Operacao(qtdMon,nome,cpfcnpj);
+            Cliente cliente = new Cliente(qtdMon,nome,cpfcnpj,banco);
+            Operacao op = new Operacao();
             int opcao = 90;
             while (opcao != 0) {
                 System.out.println("\nO que deseja fazer," + nome +
@@ -30,24 +34,24 @@ public class Main {
                 switch (opCase) {
                     case 1 -> {
                         System.out.println("Quantos reais você deseja sacar?");
-                        op.sacar(scanner.nextDouble());
+                        op.sacar(cliente,scanner.nextDouble());
                     }
                     case 2 -> {
-                        System.out.println("Seu saldo é de " + op.getSaldo());
+                        System.out.println("Seu saldo é de " + cliente.getSaldo());
                     }
                     case 3 -> {
                         System.out.println("Qual o valor que deseja depositar?");
-                        op.depositar(scanner.nextDouble());
+                        op.depositar(cliente,scanner.nextDouble());
                     }
                     case 4 -> {
                         System.out.println("Qual valor deseja transferir?");
                         double transTemp = scanner.nextDouble();
                         System.out.println("Qual o nome da pessoa para a qual deseja transferir?");
-                        op.transferir(transTemp, scanner.next());
+                        op.transferir(cliente,transTemp, scanner.next());
                     }
                     case 5 -> {
                         System.out.println("Qual o valor do pagamento?");
-                        op.pagar(scanner.nextDouble());
+                        op.pagar(cliente,scanner.nextDouble());
 
                     }
                 }

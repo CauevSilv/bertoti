@@ -8,10 +8,19 @@ public class Cliente extends Banco{
     private String nome;
     private String cpf;
 
-    public Cliente(String nomeBanco, String nomeCliente, double saldo, String cpf) {
-        super(nomeBanco, nomeCliente, saldo, cpf);
-    }
+    public Cliente(double saldo, String nome, String cpf,String nomeBanco) {
+        super(nomeBanco);
+        if (!isValidCPF(cpf)){
+            System.out.println("CPF inválido!");
+        } else {
+            CPFFormatter cpfFormatter = new CPFFormatter();
+            String cpfFormated = cpfFormatter.formatCPF(cpf);
+            this.saldo = saldo;
+            this.nome = nome;
+            this.cpf = cpfFormated;
 
+        }
+    }
 
     private boolean isValidCPF(String cpf) {
         // Remove caracteres não numéricos
