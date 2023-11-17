@@ -3,22 +3,15 @@ package Contas;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Cliente {
+public class Cliente extends Banco{
     private double saldo;
     private String nome;
     private String cpf;
 
-    public Cliente(double saldo, String nome, String cpf) {
-        CPFFormatter formatter  = new CPFFormatter();
-        String cpfFormatado =  formatter.formatCPF(cpf);
-        if (!isValidCPF(cpf)) {
-            throw new IllegalArgumentException("CPF inválido. Certifique-se de que o CPF esteja formatado corretamente.");
-        }else {
-            this.saldo = saldo;
-            this.nome = nome;
-            this.cpf = cpfFormatado;
-        }
+    public Cliente(String nomeBanco, String nomeCliente, double saldo, String cpf) {
+        super(nomeBanco, nomeCliente, saldo, cpf);
     }
+
 
     private boolean isValidCPF(String cpf) {
         // Remove caracteres não numéricos

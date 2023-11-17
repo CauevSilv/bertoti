@@ -1,9 +1,11 @@
 package Contas;
 
-public class Operacao extends Cliente{
-
-    public Operacao(double saldo, String nome, String cpf) {
-        super(saldo, nome, cpf);
+public class Operacao extends Banco{
+    private Banco banco;
+    private Cliente cliente;
+    public Operacao(Banco banco,Cliente cliente){
+        this.banco = banco;
+        this.cliente = cliente;
     }
 
     public void sacar(double valor) {
