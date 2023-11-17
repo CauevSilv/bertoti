@@ -1,5 +1,5 @@
 import Contas.Operacao;
-import Contas.Saldo;
+
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -9,13 +9,15 @@ public class Main {
         try {
             System.out.println("Bem vindo ao sistema do Banco 2!" +
                     "\nFaça seu login!");
-            System.out.println("Informe seu nome.");
+            System.out.println("Informe seu CPF/CNPJ.");
             Scanner scanner = new Scanner(System.in);
+            String cpfcnpj = scanner.next();
+            System.out.println("Informe seu nome.");
             String nome = scanner.next();
             System.out.println("Bem vindo(a) " + nome + "!\nEscreva o valor disponível na sua conta.");
             double qtdMon = scanner.nextDouble();
 
-            Operacao op = new Operacao(qtdMon);
+            Operacao op = new Operacao(qtdMon,nome,cpfcnpj);
             int opcao = 90;
             while (opcao != 0) {
                 System.out.println("\nO que deseja fazer," + nome +
@@ -28,11 +30,10 @@ public class Main {
                 switch (opCase) {
                     case 1 -> {
                         System.out.println("Quantos reais você deseja sacar?");
-                        scanner.nextDouble();
                         op.sacar(scanner.nextDouble());
                     }
                     case 2 -> {
-                        op.verSaldo();
+                        System.out.println("Seu saldo é de " + op.getSaldo());
                     }
                     case 3 -> {
                         System.out.println("Qual o valor que deseja depositar?");

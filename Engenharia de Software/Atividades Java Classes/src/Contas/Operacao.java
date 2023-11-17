@@ -1,29 +1,33 @@
 package Contas;
 
-public class Operacao extends Saldo{
+public class Operacao extends Cliente{
 
-    public Operacao(double valor) {
-        super(valor);
+    public Operacao(double saldo, String nome, String cpf) {
+        super(saldo, nome, cpf);
     }
 
     public void sacar(double valor) {
-        retirarSaldo(valor);
+        if (getSaldo() < valor){
+            System.out.println("Saldo insuficiente :(");
+        } else {
+            setSaldo(getSaldo()-valor);
+            System.out.println("Seu novo saldo é de :" + getSaldo());
+        }
         }
     public void depositar(double valor){
-        addSaldo(valor);
-        System.out.println("O novo saldo é " + getSaldo());
+        setSaldo(getSaldo() + valor);
+        System.out.println("Valor depositado! O seu saldo atual é : " + getSaldo());
     }
     public void pagar(double valor){
-        retirarSaldo(valor);
-        System.out.println("Conta paga!!! Segue seu novo saldo: " + getSaldo());
-
-    }
+        sacar(valor);
+        }
     public void transferir(double valor,String nome1){
-        retirarSaldo(valor);
-        System.out.println(valor + " foi transferido para " + nome1);
-    }
-    public double verSaldo(){
-        return getSaldo();
-        //System.out.println("Seu saldo é R$" + saldo.getSaldo());
+        if (getSaldo() < valor){
+            System.out.println("Saldo insuficiente!");
+            } else {
+            setSaldo(getSaldo() - valor);
+            System.out.println("R$" + getSaldo() + " transferidos para " + nome1);
+        }
+
     }
 }
