@@ -50,3 +50,9 @@ Diagrama de Classe UML
 Diagrama de Caso de Uso
 
 ![Diagrama de caso de uso ](https://github.com/CauevSilv/bertoti/assets/127447047/3e0184db-1a3b-4987-8834-6a2c8fc7203e)
+
+---------------------------------------
+Atividade Heurísticas
+
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/d22fc6d0-ac1f-4e6a-a221-119c5d395b60)
+
