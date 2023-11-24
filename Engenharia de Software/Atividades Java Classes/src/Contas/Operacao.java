@@ -21,9 +21,13 @@ public class Operacao{
     public void pagar(Cliente cliente,double valor){
         if (cliente.getSaldo() < valor){
             System.out.println("Saldo insuficiente :(");
+        } else if (valor < cliente.getLimiteAtual()) {
+            System.out.println("Limite diário estourado!");
         } else if (valor > cliente.getLimiteAtual()) {
             cliente.setSaldo(cliente.getSaldo() - valor);
+
             cliente.updateDate();
+            System.out.println("Conta paga! O seu saldo atual é : " + cliente.getSaldo());
         }
 
         }

@@ -42,7 +42,7 @@ public class Cliente extends Conta{
 
     public void setSaldo(double valor) {
         if (valor < this.saldo){
-            setLimiteAtual(getLimiteAtual()-valor);
+            setLimiteAtual(getLimiteAtual() - (getSaldo() - valor));
             this.saldo = valor;
         } else {
             this.saldo = valor;

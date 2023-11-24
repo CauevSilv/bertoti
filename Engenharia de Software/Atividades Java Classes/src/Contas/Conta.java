@@ -17,6 +17,8 @@ public class Conta extends Banco{
         this.numeroConta = rd.nextInt(100000);
         this.maxCredito = maxCredito;
         this.codVerificador = rd.nextInt(299);
+        this.ultDataTrans = LocalDateTime.now().minusDays(1);
+        this.limiteAtual = maxCredito;
     }
 
     public Boolean updateDate(){
@@ -39,6 +41,10 @@ public class Conta extends Banco{
           aux = false;
         }
         return aux;
+    }
+
+    public void setUltDataTrans(LocalDateTime ultDataTrans) {
+        this.ultDataTrans = ultDataTrans;
     }
 
     public double getLimiteAtual() {
