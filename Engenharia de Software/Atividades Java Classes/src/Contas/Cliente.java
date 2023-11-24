@@ -3,13 +3,13 @@ package Contas;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Cliente extends Banco{
+public class Cliente extends Conta{
     private double saldo;
     private String nome;
     private String cpf;
 
-    public Cliente(double saldo, String nome, String cpf,String nomeBanco) {
-        super(nomeBanco);
+    public Cliente(double saldo, String nome, String cpf,String nomeBanco,double maxCredito) {
+        super(nomeBanco,maxCredito);
         if (!isValidCPF(cpf)){
             System.out.println("CPF inválido!");
         } else {
@@ -40,8 +40,14 @@ public class Cliente extends Banco{
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+    public void setSaldo(double valor) {
+        if (valor < this.saldo){
+            setLimiteAtual(getLimiteAtual()-valor);
+            this.saldo = valor;
+        } else {
+            this.saldo = valor;
+        }
+
     }
 
     public String getNome() {

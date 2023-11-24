@@ -12,15 +12,17 @@ public class Main {
                     "\nFaça seu login!");
             System.out.println("Informe seu CPF/CNPJ.");
             Scanner scanner = new Scanner(System.in);
+            String cpfcnpj = scanner.next();
             System.out.println("Informe o nome do seu banco");
             String banco = scanner.next();
-            String cpfcnpj = scanner.next();
             System.out.println("Informe seu nome.");
             String nome = scanner.next();
+            System.out.println("Qual o limite monetário de transferências, pagamentos e saques da sua conta?");
+            double limite = scanner.nextDouble();
             System.out.println("Bem vindo(a) " + nome + "!\nEscreva o valor disponível na sua conta.");
             double qtdMon = scanner.nextDouble();
 
-            Cliente cliente = new Cliente(qtdMon,nome,cpfcnpj,banco);
+            Cliente cliente = new Cliente(qtdMon,nome,cpfcnpj,banco,limite);
             Operacao op = new Operacao();
             int opcao = 90;
             while (opcao != 0) {
