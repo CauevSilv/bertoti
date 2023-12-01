@@ -56,3 +56,53 @@ Atividade Heurísticas
 
 ![image](https://github.com/CauevSilv/bertoti/assets/127447047/d22fc6d0-ac1f-4e6a-a221-119c5d395b60)
 
+Exemplo 1
+-Nesse exemplo, o botão foi clicado, porém não existe um feedback de erro ou sucesso na operação.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/61e24d5d-3368-4509-8495-27e4924129d9)
+
+Exemplo 2
+-O gerenciador de tarefas do Windows deixa a entender que o processador está somente em 23% de sua capacidade de processamento enquanto, na verdade, ele está processando algo 23% do tempo em um período de 1 segundo, por exemplo.
+-Inclusive isso é um problema grande. As vezes parece que o processador está sendo sub-utilizado.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/fbba3064-d7b3-488a-809e-6bae57ca382b)
+
+Exemplo 3
+-No Excel, CTRL + B salva, enquanto em todo resto das aplicações existentes na história da humanidade, a combinação que salva é CTRL + S.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/f5c915dc-f780-49a5-802b-43a53eb268c7)
+
+Exemplo 4
+-O botão "X" em vários aplicativos , na verdade minimizam ele, ao invés de encerrá-lo.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/ab1a7bed-42da-421a-9ff3-490e095e24a9)
+
+Exemplo 5
+-Caixa de input de semestre permitir que qualquer coisa seja digitada.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/bb783dff-1770-4d26-abb1-084948618372)
+
+Exemplo 6
+-Em nenhum lugar está explícito o que cada botão desse faz, mas só de olhar, o usuário consegue ter noção sobre o que se trata.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/3e2be677-d563-4d8f-bac0-dfc8c65361bb)
+
+Exemplo 7
+-A plataforma de vídeos Youtube, por exemplo, torna basicamente impossível encontrar um vídeo muito específico utilizando somente o Mouse.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/824e02b5-dc10-4972-94de-b88e93aa89f9)
+
+Exemplo 8
+-A tela inicial do Aliexpress, quando não se tem uma conta, é algo bem caótico para os padrões atuais.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/06e0d023-8844-4d3d-9700-8fca22ca9567)
+
+Exemplo 9
+-O erro de um aplicativo , além de não ser tratado, causando travamento, ainda pode jogar isso aqui na sua frente.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/72421d67-9b35-4ca3-b69f-f1d6da0c0d47)
+
+Exemplo 10
+-O botão de ajuda do Explorador de arquivos te leva para um navegador escolhido por ele, utilizando um mecanismo de navegação não selecionado e pra piorar ainda deixa margem de erro.
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/e2297ffb-44d2-4a7d-98ef-8687087e2438)
+
+
+
+
+
+
+
+
+
+
