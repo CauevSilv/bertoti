@@ -45,11 +45,12 @@ muito pesada, ela compensa isso relizando uma otimização basicamente mágica n
 ---------------------------------------
 Diagrama de Classe UML
 
-![Diagrama de Classe UML](https://github.com/CauevSilv/bertoti/assets/127447047/9ed80997-fa1c-45b6-903a-66e1d81a07d9)
+![Diagrama de Classe UML](https://github.com/CauevSilv/bertoti/assets/127447047/9262b833-c4dc-479c-ac27-4eaaa80ff70c)
+
 ---------------------------------------
 Diagrama de Caso de Uso
 
-![Diagrama de caso de uso ](https://github.com/CauevSilv/bertoti/assets/127447047/3e0184db-1a3b-4987-8834-6a2c8fc7203e)
+![Diagrama de caso de uso](https://github.com/CauevSilv/bertoti/assets/127447047/0badb06f-e2d8-4b98-80c5-8af1284dd59b)
 
 ---------------------------------------
 Atividade Heurísticas
