@@ -45,7 +45,7 @@ muito pesada, ela compensa isso relizando uma otimização basicamente mágica n
 ---------------------------------------
 Diagrama de Classe UML
 
-![Diagrama de Classe UML](https://github.com/CauevSilv/bertoti/assets/127447047/9262b833-c4dc-479c-ac27-4eaaa80ff70c)
+![Diagrama de Classe UML](https://github.com/CauevSilv/bertoti/assets/127447047/59829205-8826-419f-8682-8167c08575f1)
 
 ---------------------------------------
 Diagrama de Caso de Uso
