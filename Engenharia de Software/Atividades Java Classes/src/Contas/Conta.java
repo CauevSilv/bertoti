@@ -59,10 +59,6 @@ public class Conta extends Banco{
         return numeroConta;
     }
 
-    public void setNumeroConta(int numeroConta) {
-        this.numeroConta = numeroConta;
-    }
-
     public double getMaxCredito() {
         return maxCredito;
     }
@@ -75,7 +71,4 @@ public class Conta extends Banco{
         return codVerificador;
     }
 
-    public void setCodVerificador(int codVerificador) {
-        this.codVerificador = codVerificador;
-    }
 }

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class teste {
     @Test
-    void testeLogin(){
+    void testeCpfa(){
         int aux = 0;
         try {
             Cliente cliente = new Cliente(200,"Cauê","111111111","BB",10000);
@@ -20,7 +20,7 @@ public class teste {
 
     }
     @Test
-    void testLoginB(){
+    void testCpfb(){
         Cliente cliente = null;
         try{
             cliente = new Cliente(200,"Cauê","11111111111","BB",1000);
@@ -34,16 +34,25 @@ public class teste {
     }
 
     @Test
-    void testeDepositarA(){
-        double valor = 500;
-        Cliente cliente = new Cliente(200,"Cauê","11111111111","BB",1000);
+    void testeLimiteA(){
+        double valor = 15;
+        Cliente cliente = new Cliente(100,"Cauê","11111111111","BB",10);
         Operacao op = new Operacao();
-        op.depositar(cliente,valor);
-        Assertions.assertEquals(1500,cliente.getSaldo());
+        op.sacar(cliente,valor);
+        Assertions.assertEquals(85,cliente.getSaldo());
+        //Fail Limite
+    }
+    @Test
+    void testeLimiteB(){
+        double valor = 200;
+        Cliente cliente = new Cliente(1500,"Cauê","11111111111","BB",700);
+        Operacao op = new Operacao();
+        op.sacar(cliente,valor);
+        Assertions.assertEquals(184,cliente.getSaldo());
         //Pass
     }
     @Test
-    void testeTransferir(){
+    void testeTransferirA(){
         Cliente cliente = new Cliente(1000,"Cauê","11111111111","BB",1000);
         Operacao op  = new Operacao();
         op.transferir(cliente,15,"Banco");
@@ -51,7 +60,14 @@ public class teste {
         //Pass
     }
     @Test
-    void testeSacar(){
+    void testeTransferirB(){
+        Cliente cliente = new Cliente(9999,"Cauê","11111111111","BB",10000);
+        Operacao op  = new Operacao();
+        op.transferir(cliente,9998,"Serasa");
+        Assertions.assertEquals(1,cliente.getSaldo());
+    }
+    @Test
+    void testeSacarA(){
         Cliente cliente = new Cliente(1000,"Cauê","11111111111","BB",1000);
         Operacao op = new Operacao();
         op.sacar(cliente,700);
@@ -59,18 +75,41 @@ public class teste {
         //Fail
     }
     @Test
-    void testeTransferirB(){
-        Cliente cliente = new Cliente(150,"Cauê","11111111111","BB",1000);
-        Operacao op  = new Operacao();
-        op.transferir(cliente,9999,"Serasa");
-        Assertions.assertEquals(1,cliente.getSaldo());
+    void testeSacarB(){
+        Cliente cliente = new Cliente(1000,"Cauê","11111111111","BB",1000);
+        Operacao op = new Operacao();
+        op.sacar(cliente,700);
+        Assertions.assertEquals(300,cliente.getSaldo());
+        //Fail
     }
+
     @Test
     void testePagar(){
         Cliente cliente = new Cliente(200,"Cauê","11111111111","BB",1000);
         Operacao op = new Operacao();
         op.pagar(cliente,3000);
         Assertions.assertEquals(300,cliente.getSaldo());
+    }
+    @Test
+    void testePagarB(){
+        Cliente cliente = new Cliente(200,"Cauê","11111111111","BB",1000);
+        Operacao op = new Operacao();
+        op.pagar(cliente,150);
+        Assertions.assertEquals(300,cliente.getSaldo());
+    }
+    @Test
+    void testeDepositarA(){
+        Cliente cliente = new Cliente(200,"Cauê","11111111111","BB",1000);
+        Operacao op = new Operacao();
+        op.depositar(cliente,1005);
+        Assertions.assertEquals(300,cliente.getSaldo());
+    }
+    @Test
+    void testeDepositarB(){
+        Cliente cliente = new Cliente(200,"Cauê","11111111111","BB",1000);
+        Operacao op = new Operacao();
+        op.depositar(cliente,150);
+        Assertions.assertEquals(350,cliente.getSaldo());
     }
 
 }
