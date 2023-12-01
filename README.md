@@ -54,7 +54,8 @@ Diagrama de Caso de Uso
 ---------------------------------------
 Atividade Heurísticas
 
-![image](https://github.com/CauevSilv/bertoti/assets/127447047/d22fc6d0-ac1f-4e6a-a221-119c5d395b60)
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/c10f7fef-b96c-47d0-bd07-5fb275a7590f)
+
 
 Exemplo 1
 -Nesse exemplo, o botão foi clicado, porém não existe um feedback de erro ou sucesso na operação.
