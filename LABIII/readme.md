@@ -14,5 +14,11 @@ DELETE
 GET após o final
 ![image](https://github.com/CauevSilv/bertoti/assets/127447047/f84a90b6-bc29-4d90-be7c-351bbbd9c6eb)
 
+Front sem nada:
 
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/924ff59c-e609-4783-b4f9-b8fd276156ab)
+
+Com 1 carro adicionado:
+
+![image](https://github.com/CauevSilv/bertoti/assets/127447047/c55448ef-66ad-4bda-96fc-999ea39a8734)
 
