@@ -2,8 +2,8 @@
 
 ## Introdução
 
-Tenho 24 anos, sou bacharel em Imagem e Som pela Universidade Federal de São Carlos e graduando do Tecnólogo em Banco de Dados pela FATEC Prof. Jessen Vidal.
-Sou estagiário de TI na empresa KLG do Brasil.
+tenho 22 anos, estou cursando Banco de Dados na FATEC SJC, no 4° Período.
+Sou Analista de Suporte e Manutenção de Sistema Jr. na Geopixel.
 
 ## Contatos
 * [GIT](https://github.com/CauevSilv)
