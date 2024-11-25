@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .input-group button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Carros</h1>
+    <div class="input-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome do carro">
+    </div>
+    <div class="input-group">
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" placeholder="Cor do carro">
+    </div>
+    <div class="input-group">
+        <label for="fabricante">Fabricante:</label>
+        <input type="text" id="fabricante" placeholder="Fabricante do carro">
+    </div>
+    <div class="input-group">
+        <button onclick="adicionarCarro()">Adicionar Carro</button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cor</th>
+            <th>Fabricante</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody id="listaCarros">
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function adicionarCarro() {
+        var nome = document.getElementById('nome').value;
+        var cor = document.getElementById('cor').value;
+        var fabricante = document.getElementById('fabricante').value;
+
+        if (nome && cor && fabricante) {
+            var tabela = document.getElementById('listaCarros');
+            var novaLinha = tabela.insertRow();
+
+            var celulaNome = novaLinha.insertCell(0);
+            var celulaCor = novaLinha.insertCell(1);
+            var celulaFabricante = novaLinha.insertCell(2);
+            var celulaAcoes = novaLinha.insertCell(3);
+
+            celulaNome.textContent = nome;
+            celulaCor.textContent = cor;
+            celulaFabricante.textContent = fabricante;
+
+            var btnRemover = document.createElement('button');
+            btnRemover.textContent = 'Remover';
+            btnRemover.onclick = function() {
+                tabela.deleteRow(novaLinha.rowIndex - 1);
+            };
+            celulaAcoes.appendChild(btnRemover);
+
+            document.getElementById('nome').value = '';
+            document.getElementById('cor').value = '';
+            document.getElementById('fabricante').value = '';
+        } else {
+            alert('Por favor, preencha todos os campos.');
+        }
+    }
+</script>
+</body>
+</html>
