@@ -84,9 +84,76 @@ Aprendi a lidar com conflitos dentro da equipe.
 - Slack: ferramenta para comunicação com o cliente
 
 #### Contribuições Pessoais
-- Colaborei com o desenvolvimento da tela que realiza o CRUDE de usuários e suas permissões.
-- Mapeei e criei os endpoints de usuários, alterando o formato das tabelas que continham essas relações para permitir a correta manipulação desses dados do banco/front.
+- Atuei como FullStack, com mais foco na parte de Front End.
+<details>
+<summary>Alteração da entidade Permissão</summary>
 
+- Alteração dos atributos/ligações da entidade e do seu respectivo DTO.
+- Adição da entidade PermissionType, que gerencia a ligação de Usuário/Permissão
+
+---
+
+- Criação do ENUM dos valores de PermissionType.
+- Alterado o Controller da entidade User para adequar-se corretamente ao ajuste das permissões.
+- Alterado a entidade User para ter a ligação correta com a entidade Permissao.
+
+</details>
+
+<details>
+<summary>Alteração do DTO e do Controller da entidade SilverConfig</summary>
+
+- Adicionado ModelMapper para facilitar nas transformações de Entidades em Dtos e vice versa.
+- Alterado o atributo ID do DTO SilverConfig para corresponder a entidade.
+- Adiconado endpoint addSilverFromTo no controller da entidade Silver para persistir uma nova SilverConfig.
+- Alteado o controller da Silver para adiconar o @Autowired para atrelar corretamente os Beans do Spring. 
+</details>
+
+<details>
+<summary>Criação da tela de atribuição de permissões.</summary>
+
+- Adicionado o componente CadastroInputSection.vue para permitir a adição de até 3 permissões por usuário.
+- Adicionado ao componente CadastroInputSection as lógicas e a chamada ao enpoint 'user/create-user' para cadastrar um usuário.
+- Modificado o objeto JSON criado para enviar como Body na requisição, para atender a necessidade de adicionar várias permissões.
+---
+- Adicionado ao UserDTO os atributos booleanos correspondentes a cada PermissionType;
+- Criado UserPermissionService para lidar com o JSON enviado do front-end com as alterações de permissões por User.
+</details>
+
+<details>
+<summary>Modificação do CompanyController</summary>
+
+- Adição do endpoint getAllCompanies, responsável por enviar ao front um array com todas as Empresas.
+- Retirado da entidade User a ligação entre User/Empresa.
+- Adicionado ao Service o método getAllCompanies para chamar do repositório e enviar ao controller.
+
+</details>
+
+<details>
+<summary>Adicionada funcionalidade para editar os usuários</summary>
+
+- Modificado a já existente tela de visualização de usuários para permitir a edição dos objetos das tabelas.
+- Criado métodos para ler e modificar cada um dos campos da tabela, permitindo uma rápida edição de cada usuário individualmente.
+- Criado método para persistir as modificações de usuários diretamente extraidos da tabela, reaproveitando os mecanismos da criação de usuário para extrair os mesmos de cada linha.
+
+---
+
+- Criado objeto WrapUpMetadata para o usuário modificado.
+- Alterado diversos elementos visuais(DropDowns, SelectLists, CheckBox) para corresponder as modificação em cada Usuário.
+- Alterado tamanho e responsividade dos componentes para vários tipos de telas.
+ 
+</details>
+
+<details>
+<summary>Correção de diversos Bugs</summary>
+
+- Corrigido um bug que gerava um erro ao editar e salvar o mesmo usuário que tinha sido criado na mesma sessão.
+- Adicionado a tabela de usuários uma validação especial para o usuário ADM, impedindo ele de ser visto/editado.
+---
+-Adicionado ao BackEnd, no UserService, o objeto Optional o Java para tratar corretamente os métodos caso o objeto editado não tenha sido persistido.
+-Adicinado ao UserService validação para o usuário ADM, para todas as chamadas de métodos (menos as de acesso).
+-Corrigido problema de validação o objeto User que causava lançava uma exeção caso o user fosse igual ao cadastrado.
+
+</details>
 
 #### Hard Skills
 Apresente as hard skills que você utilizou/desenvolveu durante o projeto e o nível de proficiência alcançado. Exemplo: CSS - Sei fazer com autonomia
